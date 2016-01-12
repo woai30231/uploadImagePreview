@@ -1,0 +1,47 @@
+@charset "utf-8";
+html,body{
+	font-size:14px;
+	font-family:"microsoft yahei",Arial;
+	font-style:normal;
+	color:#999;
+}
+html,body,div,p,span,label,b,table,tbody,thead,td,tr,th,ul,li,ol,dt,dd,dl,select,input,form,button{
+	margin:0px;
+	padding:0px;
+}
+.imgPreviewWrap{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:15px auto;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+	padding-top:42px;
+	border:1px dashed #ccc;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	cursor:pointer;
+	background:url(../images/add-sc-img-icon.png) no-repeat 33px 9px scroll;
+}
+.imgPreviewWrap > input[type='file']{
+	display:block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	visibility:hidden;
+	opacity:0;
+	z-index:-1;
+}
+.imgPreviewWrap > img{
+	display:block;
+	margin:0px auto;
+	border:0px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:2;
+}
